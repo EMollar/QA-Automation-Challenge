@@ -9,8 +9,7 @@
 
 ## Summary of what has been done
 
-First of all, no new Docker image has been created because the software used for the creation of the TestSuite has been SoapUI and, in the official SoapUI documentation, there is already an image used for this task.
-The URL of the official SoapUI page where you can find this image is the following --> https://www.soapui.org/docs/test-automation/running-in-docker/
+First of all, no new Docker image has been created because the software used for the creation of the TestSuite has been SoapUI and, in the [official SoapUI documentation](https://www.soapui.org/docs/test-automation/running-in-docker/), there is already an image used for this task.
 
 For this task a project has been created with a TestSuite of four back end cases. These four cases test a small part of a very basic API of a calculator. The project can be found in this repository under the name "project.xml".
 
@@ -41,33 +40,40 @@ The Pipeline in Jenkins completes the explanation of the scope of this task.
 - Download the "project.xml" file found in this repository and save it in the path "C:\qachallenge".
 - Access Jenkins and create a new pipeline with the following code:
 ####     Windows SO:
-          pipeline {
-              agent any
-              stages {
-                  stage('Run tests') {
-                      steps {
-                          bat """
-                              docker run -v="C:\\qachallenge":/project -v="C:\\qachallenge":/reports -e COMMAND_LINE="-f/reports '/project/project.xml'" -i smartbear/soapuios-testrunner:latest > "C:\\qachallenge\\output.txt"    
-                          """
-                      }
-                  }
-              }
-          }
+```
+pipeline {
+    agent any
+    stages {
+        stage('Run tests') {
+            steps {
+                bat """
+                    docker run -v="C:\\qachallenge":/project -v="C:\\qachallenge":/reports -e COMMAND_LINE="-f/reports '/project/project.xml'" -i smartbear/soapuios-testrunner:latest > "C:\\qachallenge\\output.txt"    
+                """
+            }
+        }
+    }
+}
+```
           
 ####     Linux SO:
-          pipeline {
-              agent any
-              stages {
-                  stage('Run tests') {
-                      steps {
-                          sh """
-                              docker run -v="C:\\qachallenge":/project -v="C:\\qachallenge":/reports -e COMMAND_LINE="-f/reports '/project/project.xml'" -i smartbear/soapuios-testrunner:latest > "C:\\qachallenge\\output.txt"      
-                          """
-                      }
-                  }
-              }
-          }
+```
+pipeline {
+    agent any
+    stages {
+        stage('Run tests') {
+            steps {
+                sh """
+                    docker run -v="C:\\qachallenge":/project -v="C:\\qachallenge":/reports -e COMMAND_LINE="-f/reports '/project/project.xml'" -i smartbear/soapuios-testrunner:latest > "C:\\qachallenge\\output.txt"      
+                """
+            }
+        }
+    }
+}
+```
+- The pipeline can now be executed. Click on the "Build Now" option.
           
-          
+## Results of my execution
+
+![imagen](https://user-images.githubusercontent.com/29427746/160293683-69c8fb0a-20d2-4c54-8c2e-d0f9eb7f165c.png)
           
         
