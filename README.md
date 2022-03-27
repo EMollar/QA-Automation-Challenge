@@ -1,4 +1,64 @@
-[TOC]
-
 # PruebaPipeline
+
+First of all, no new Docker image has been created because the software used for the creation of the TestSuite has been SoapUI and, in the official SoapUI documentation, there is already an image used for this task.
+The URL of the official SoapUI page where you can find this image is the following --> https://www.soapui.org/docs/test-automation/running-in-docker/
+
+For this task a project has been created with a TestSuite of four back end cases. These four cases test a small part of a very basic API of a calculator. The project can be found in this repository under the name "project.xml".
+
+The four cases have been prepared in such a way that two of them will pass the assertions and the other two will not, so when we launch the TestSuite it will appear with failed tests.
+
+Below is a quick explanation of each of the four cases:
+- TC01.- Add two numbers and multiply that result - Passed Case -> It does the sum of two numbers and the result multiplies them. At the beginning of the test there is a step ("Properties") where we give value to the data we want to operate with and the expected results. This case, like TC02, has the assertions within each of the Soap steps.
+- TC02 -> The flow is the same as TC01. For this case it has been forced to fail and for this reason it has been given in the parameters, step "Properties", a different number than the correct one. Like TC01, it has the assertions inside each of the Soap steps.
+- TC03 -> With the help of a Groovy script we send requests to the Add service incriminating the input parameters of the Request until the service fails for exceeding the maximum number of characters. In this way we check the maximum number of characters that the service supports for both operators. For this case and for TC04 the assertions are in the Groovy script (this way we see a second way to create assertions).
+- TC04 -> The flow is the same as for TC03. For this case it has been forced to fail and for this purpose it has been given in the parameters, step "Properties", a different maximum number of characters than the one accepted by the input parameter. For this case and for TC03 the assertions are in the Groovy script (this way we see a second way to create assertions).
+
+The next step, having already the docker image provided by the official SoapUI documentation, has been the creation of a pipeline in Jenkins to run the Docker image and in this way launch the TestSuite from Jenkins.
+
+For this task we have created two pipelines that do exactly the same, the difference is the command that executes the instruction to run the Docker image because it changes depending on the Operating System (OS) where we have Jenkins ("bat" for Windows OS and "sh" for Linux OS).
+
+The pipeline for Windows OS is in the "Jenkinsfile_Win" file attached in this repository.
+
+The Linux OS pipeline is in the attached "Jenkinsfile_Lin" file in this repository.
+
+The Pipeline in Jenkins completes the explanation of the scope of this task.
 ![](https://github.com/EMollar/PruebaPipeline/blob/main/Images/logs.png)
+
+# How to run the docker from Jenkins step by step
+## Requirements
+### We need to have Docker and Jenkins configured.
+## Step by step
+### 1.- Create a new folder with the name "qachallenge" in the root of disk C.
+### 2.- Download the "project.xml" file found in this repository and save it in the path "C:\qachallenge".
+### 3.- Access Jenkins and create a new pipeline with the following code:
+###     Windows SO:
+          pipeline {
+              agent any
+              stages {
+                  stage('Run tests') {
+                      steps {
+                          bat """
+                              docker run -v="C:\\qachallenge":/project -v="C:\\qachallenge":/reports -e COMMAND_LINE="-f/reports '/project/project.xml'" -i smartbear/soapuios-testrunner:latest > "C:\\qachallenge\\output.txt"    
+                          """
+                      }
+                  }
+              }
+          }
+          
+###     Linux SO:
+          pipeline {
+              agent any
+              stages {
+                  stage('Run tests') {
+                      steps {
+                          sh """
+                              docker run -v="G:\\code":/project -v="G:\\code":/reports -e COMMAND_LINE="-f/reports '/project/project.xml'" -i smartbear/soapuios-testrunner:latest > "G:\\code\\output.txt"    
+                          """
+                      }
+                  }
+              }
+          }
+          
+          
+          
+        
