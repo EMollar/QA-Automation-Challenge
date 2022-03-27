@@ -94,7 +94,7 @@ pipeline {
 - Now the same execution is performed but from Jenkins with the help of the Docker image provided by SoapUI.
 - Create a new folder with the name "qachallenge" in the root of disk C.
 - Download the "project.xml" file found in this repository and save it in the path "C:\qachallenge".
-- 
+
 ![imagen](https://user-images.githubusercontent.com/29427746/160293683-69c8fb0a-20d2-4c54-8c2e-d0f9eb7f165c.png)
 
 - Finally go to Jenkins, create a new Pipeline and add the code according to the corresponding OS. In my case it is Windows OS.
@@ -110,7 +110,10 @@ pipeline {
 
 ![imagen](https://user-images.githubusercontent.com/29427746/160295204-b0bd1a4c-ff90-4672-a4df-6b071ec22db9.png)
 
-- And if you go back to the folder where you have the project you will see new files. One, with all the log of the execution. And other two for each one of the failed cases in particular. These files are attached in the repository (".
+- And if you go back to the folder where you have the project you will see new files. One, with all the log of the execution. And other two for each one of the failed cases in particular. These files are attached in the repository:
+- [output.txt](https://github.com/EMollar/QA-Automation-Challenge/blob/main/output.txt)
+- [TC02_Add_two_numbers_and_multiply_that_result__Failed_Case_Wrong_Result-Multiply_With_Assertions-0-FAILED.txt](https://github.com/EMollar/QA-Automation-Challenge/blob/main/TestSuite-TC02_Add_two_numbers_and_multiply_that_result__Failed_Case_Wrong_Result-Multiply_With_Assertions-0-FAILED.txt)
+- [TC04_Max_number_of_digits__Failed_Case_Over_the_max_number-Check_number-21-FAILED.txt](https://github.com/EMollar/QA-Automation-Challenge/blob/main/TestSuite-TC04_Max_number_of_digits__Failed_Case_Over_the_max_number-Check_number-21-FAILED.txt)
 
 ![imagen](https://user-images.githubusercontent.com/29427746/160295343-47d7330d-2258-40d8-8b27-335725d9f9c0.png)
 
