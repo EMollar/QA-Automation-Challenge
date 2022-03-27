@@ -16,10 +16,10 @@ For this task a project has been created with a TestSuite of four back end cases
 The four cases have been prepared in such a way that two of them will pass the assertions and the other two will not, so when we launch the TestSuite it will appear with failed tests.
 
 Below is a quick explanation of each of the four cases:
-- TC01.- Add two numbers and multiply that result - Passed Case -> It does the sum of two numbers and the result multiplies them. At the beginning of the test there is a step ("Properties") where we give value to the data we want to operate with and the expected results. This case, like TC02, has the assertions within each of the Soap steps.
-- TC02 -> The flow is the same as TC01. For this case it has been forced to fail and for this reason it has been given in the parameters, step "Properties", a different number than the correct one. Like TC01, it has the assertions inside each of the Soap steps.
-- TC03 -> With the help of a Groovy script we send requests to the Add service incriminating the input parameters of the Request until the service fails for exceeding the maximum number of characters. In this way we check the maximum number of characters that the service supports for both operators. For this case and for TC04 the assertions are in the Groovy script (this way we see a second way to create assertions).
-- TC04 -> The flow is the same as for TC03. For this case it has been forced to fail and for this purpose it has been given in the parameters, step "Properties", a different maximum number of characters than the one accepted by the input parameter. For this case and for TC03 the assertions are in the Groovy script (this way we see a second way to create assertions).
+- **TC01.- Add two numbers and multiply that result - Passed Case** -> It does the sum of two numbers and the result multiplies them. At the beginning of the test there is a step ("Properties") where we give value to the data we want to operate with and the expected results. This case, like TC02, has the assertions within each of the Soap steps.
+- **TC02.- Add two numbers and multiply that result - Failed Case (Wrong Result)** -> The flow is the same as TC01. For this case it has been forced to fail and for this reason it has been given in the parameters, step "Properties", a different number than the correct one. Like TC01, it has the assertions inside each of the Soap steps.
+- **TC03.- Max number of digits - Passed Case** -> With the help of a Groovy script we send requests to the Add service incriminating the input parameters of the Request until the service fails for exceeding the maximum number of characters. In this way we check the maximum number of characters that the service supports for both operators. For this case and for TC04 the assertions are in the Groovy script (this way we see a second way to create assertions).
+- **TC04.- Max number of digits - Failed Case (Over the max number)** -> The flow is the same as for TC03. For this case it has been forced to fail and for this purpose it has been given in the parameters, step "Properties", a different maximum number of characters than the one accepted by the input parameter. For this case and for TC03 the assertions are in the Groovy script (this way we see a second way to create assertions).
 
 The next step, having already the docker image provided by the official SoapUI documentation, has been the creation of a pipeline in Jenkins to run the Docker image and in this way launch the TestSuite from Jenkins.
 
@@ -117,7 +117,16 @@ pipeline {
 
 ![imagen](https://user-images.githubusercontent.com/29427746/160295343-47d7330d-2258-40d8-8b27-335725d9f9c0.png)
 
+## What could be improved from the work performed
+- For TC02, instead of indicating an expected result that we know is not the correct one, we could add a mock that when making this call returns a wrong result.
+- You could create a mocks service that runs from a Docker container.
+- A pipeline could be created on a Kubernetes agent to run Docker containers.
+- The path to the folder where the project is saved could be made flexible by adding a parameter in the pipeline. This way when running the pipeline Jenkins will ask for the path where you have decided to save the project.
+- You can save the project in a repository and have Jenkins pull directly from it without having to download it manually.
 
+## What the task can be used for?
+- Extending the number of cases you could have as a regression to ensure that nothing of what has already been developed so far has been broken. A Job could be created from Jenkins to be launched every day first hour or every time there is a software upload.
+- It could also be used as smoke tests by creating a Suite with one test per service to ensure that services are up and running. Also a Job could be created from Jenkins to be launched every day first hour or every time there is a software upload.
 
 
 
