@@ -1,4 +1,13 @@
-# PruebaPipeline
+# QA-Automation-Challenge
+
+## Tabla de contenido
+- [Summary of what has been done](#summary-of-what-has-been-done).
+- [How to run the docker from Jenkins step by step](#how-to-run-the-docker-from-jenkins-step-by-step).
+- [Results of my execution](#results-of-my-execution).
+- [What could be improved from the work performed](#what-could-be-improved-from-the-work-performed).
+- [What the task can be used for?](#what-the-task-can-be-used-for?).
+
+## Summary of what has been done
 
 First of all, no new Docker image has been created because the software used for the creation of the TestSuite has been SoapUI and, in the official SoapUI documentation, there is already an image used for this task.
 The URL of the official SoapUI page where you can find this image is the following --> https://www.soapui.org/docs/test-automation/running-in-docker/
@@ -24,14 +33,14 @@ The Linux OS pipeline is in the attached "Jenkinsfile_Lin" file in this reposito
 The Pipeline in Jenkins completes the explanation of the scope of this task.
 ![](https://github.com/EMollar/PruebaPipeline/blob/main/Images/logs.png)
 
-# How to run the docker from Jenkins step by step
-## Requirements
-We need to have Jenkins configured with Docke plugin installed.
-## Step by step
-### 1.- Create a new folder with the name "qachallenge" in the root of disk C.
-### 2.- Download the "project.xml" file found in this repository and save it in the path "C:\qachallenge".
-### 3.- Access Jenkins and create a new pipeline with the following code:
-###     Windows SO:
+## How to run the docker from Jenkins step by step
+### Requirements
+- We need to have Jenkins configured with Docke plugin installed.
+### Step by step
+- Create a new folder with the name "qachallenge" in the root of disk C.
+- Download the "project.xml" file found in this repository and save it in the path "C:\qachallenge".
+- Access Jenkins and create a new pipeline with the following code:
+####     Windows SO:
           pipeline {
               agent any
               stages {
@@ -45,7 +54,7 @@ We need to have Jenkins configured with Docke plugin installed.
               }
           }
           
-###     Linux SO:
+####     Linux SO:
           pipeline {
               agent any
               stages {
