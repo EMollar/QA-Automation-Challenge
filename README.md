@@ -30,7 +30,6 @@ The pipeline for Windows OS is in the "Jenkinsfile_Win" file attached in this re
 The Linux OS pipeline is in the attached "Jenkinsfile_Lin" file in this repository.
 
 The Pipeline in Jenkins completes the explanation of the scope of this task.
-![](https://github.com/EMollar/PruebaPipeline/blob/main/Images/logs.png)
 
 ## How to run the docker from Jenkins step by step
 ### Requirements
@@ -74,6 +73,54 @@ pipeline {
           
 ## Results of my execution
 
+- My execution of the task will be shown with the help of images. I will first show how to launch it manually from SoapUI and then the execution from Jenkins to see how the logs are displayed in both cases.
+- The following image shows in SoapUI the TestSuite with the four cases and their respective steps.
+
+![imagen](https://user-images.githubusercontent.com/29427746/160293815-431168ac-58e8-4954-adeb-bbebcccacde3.png)
+
+- As input data and expected data are indicated. Note that the "FinalResult" data is automatically filled with the final result obtained from the execution.
+
+![imagen](https://user-images.githubusercontent.com/29427746/160293926-cf1c0072-77dd-4b7e-ab57-1e5fa14c0e95.png)
+
+- The TestSuite is run and the four cases are launched sequentially. The cases could be launched in parallel since no case depends on the other but SoapUI does not keep logs in this case.The following image shows the result of the manual execution.
+
+![imagen](https://user-images.githubusercontent.com/29427746/160294297-3c9ea093-2e7e-4cb8-94cb-a383b9d8ee1a.png)
+
+- Execution logs
+
+![imagen](https://user-images.githubusercontent.com/29427746/160295188-cb14a31e-6715-46df-ab9b-bd3a8a96ac71.png)
+
+
+- Now the same execution is performed but from Jenkins with the help of the Docker image provided by SoapUI.
+- Create a new folder with the name "qachallenge" in the root of disk C.
+- Download the "project.xml" file found in this repository and save it in the path "C:\qachallenge".
+- 
 ![imagen](https://user-images.githubusercontent.com/29427746/160293683-69c8fb0a-20d2-4c54-8c2e-d0f9eb7f165c.png)
+
+- Finally go to Jenkins, create a new Pipeline and add the code according to the corresponding OS. In my case it is Windows OS.
+
+![imagen](https://user-images.githubusercontent.com/29427746/160294855-d5f5f218-79c3-4df0-8079-9cb0da5e7172.png)
+
+- Apply, save and run the Pipeline.
+- The execution fails because we have tests that have not passed all assertions.
+
+![imagen](https://user-images.githubusercontent.com/29427746/160295045-62246992-623d-42f8-92aa-71b5b84ff6c5.png)
+
+- You can check the logs in Jenkins as shown in the following image.
+
+![imagen](https://user-images.githubusercontent.com/29427746/160295204-b0bd1a4c-ff90-4672-a4df-6b071ec22db9.png)
+
+- And if you go back to the folder where you have the project you will see new files. One, with all the log of the execution. And other two for each one of the failed cases in particular. These files are attached in the repository (".
+
+![imagen](https://user-images.githubusercontent.com/29427746/160295343-47d7330d-2258-40d8-8b27-335725d9f9c0.png)
+
+
+
+
+
+
+
+
+
           
         
