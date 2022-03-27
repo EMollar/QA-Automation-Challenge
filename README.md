@@ -52,7 +52,7 @@ The Pipeline in Jenkins completes the explanation of the scope of this task.
                   stage('Run tests') {
                       steps {
                           sh """
-                              docker run -v="G:\\code":/project -v="G:\\code":/reports -e COMMAND_LINE="-f/reports '/project/project.xml'" -i smartbear/soapuios-testrunner:latest > "G:\\code\\output.txt"    
+                              docker run -v="C:\\qachallenge":/project -v="C:\\qachallenge":/reports -e COMMAND_LINE="-f/reports '/project/project.xml'" -i smartbear/soapuios-testrunner:latest > "C:\\qachallenge\\output.txt"      
                           """
                       }
                   }
