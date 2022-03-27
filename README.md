@@ -26,7 +26,7 @@ The Pipeline in Jenkins completes the explanation of the scope of this task.
 
 # How to run the docker from Jenkins step by step
 ## Requirements
-### We need to have Jenkins configured with Docke plugin installed.
+We need to have Jenkins configured with Docke plugin installed.
 ## Step by step
 ### 1.- Create a new folder with the name "qachallenge" in the root of disk C.
 ### 2.- Download the "project.xml" file found in this repository and save it in the path "C:\qachallenge".
