@@ -5,7 +5,7 @@
 - [How to run the docker from Jenkins step by step](#how-to-run-the-docker-from-jenkins-step-by-step).
 - [Results of my execution](#results-of-my-execution).
 - [What could be improved from the work performed](#what-could-be-improved-from-the-work-performed).
-- [What the task can be used for?](#what-the-task-can-be-used-for?).
+- [What the task can be used for?](#what-the-task-can-be-used-for).
 
 ## Summary of what has been done
 
