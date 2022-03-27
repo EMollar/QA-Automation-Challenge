@@ -1,0 +1,724 @@
+================================
+=
+= SOAPUI_HOME = /usr/local/SmartBear/SoapUI-5.7.0
+=
+================================
+SoapUI 5.7.0 TestCase Runner
+18:18:06,650 INFO  [DefaultSoapUICore] Creating new settings at [/root/soapui-settings.xml]
+18:18:07,180 INFO  [PluginManager] 0 plugins loaded in 1 ms
+18:18:07,181 INFO  [DefaultSoapUICore] All plugins loaded
+18:18:08,241 INFO  [WsdlProject] Loaded project from [file:/project/project.xml]
+18:18:08,246 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [QA Automation Challenge]
+18:18:08,247 INFO  [SoapUITestCaseRunner] Running Project [QA Automation Challenge], runType = SEQUENTIAL
+18:18:08,256 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC03.- Max number of digits - Passed Case]
+18:18:08,256 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC01.- Add two numbers and multiply that result - Passed Case]
+18:18:08,256 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC02.- Add two numbers and multiply that result - Failed Case (Wrong Result)]
+18:18:08,256 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TC04.- Max number of digits - Failed Case (Over the max number)]
+18:18:08,259 INFO  [SoapUITestCaseRunner] running step [Properties]
+18:18:08,259 INFO  [SoapUITestCaseRunner] running step [Reset Properties]
+18:18:08,259 INFO  [SoapUITestCaseRunner] running step [Reset Properties]
+18:18:08,259 INFO  [SoapUITestCaseRunner] running step [Properties]
+18:18:08,300 INFO  [SoapUITestCaseRunner] running step [Add With Assertions]
+18:18:08,300 INFO  [SoapUITestCaseRunner] running step [Add With Assertions]
+18:18:08,826 INFO  [SoapUITestCaseRunner] running step [Properties]
+18:18:08,826 INFO  [SoapUITestCaseRunner] running step [Properties]
+18:18:08,826 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:08,826 INFO  [SoapUITestCaseRunner] running step [Add]
+Progress: 1 - Loading Definition from cache
+18:18:08,943 DEBUG [AbstractDefinitionContext] Loading Definition...
+18:18:08,950 DEBUG [WsdlInterfaceDefinition] Loading WSDL: http://www.dneonline.com/calculator.asmx?wsdl
+18:18:08,950 DEBUG [AbstractWsdlDefinitionLoader] Returning baseInputSource [http://www.dneonline.com/calculator.asmx?wsdl]
+Retrieving document at 'http://www.dneonline.com/calculator.asmx?wsdl'.
+18:18:09,003 INFO  [SchemaUtils] Added default schema from file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/xop.xsd with targetNamespace http://www.w3.org/2004/08/xop/include
+18:18:09,030 INFO  [SchemaUtils] Added default schema from file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/XMLSchema.xsd with targetNamespace http://www.w3.org/2001/XMLSchema
+18:18:09,033 INFO  [SchemaUtils] Added default schema from file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/xml.xsd with targetNamespace http://www.w3.org/XML/1998/namespace
+18:18:09,035 INFO  [SchemaUtils] Added default schema from file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/swaref.xsd with targetNamespace http://ws-i.org/profiles/basic/1.1/xsd
+18:18:09,039 INFO  [SchemaUtils] Added default schema from file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/xmime200505.xsd with targetNamespace http://www.w3.org/2005/05/xmlmime
+18:18:09,042 INFO  [SchemaUtils] Added default schema from file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/xmime200411.xsd with targetNamespace http://www.w3.org/2004/11/xmlmime
+18:18:09,045 INFO  [SchemaUtils] Added default schema from file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope.xsd with targetNamespace http://schemas.xmlsoap.org/soap/envelope/
+18:18:09,048 INFO  [SchemaUtils] Added default schema from file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd with targetNamespace http://schemas.xmlsoap.org/soap/encoding/
+18:18:09,050 INFO  [SchemaUtils] Added default schema from file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEnvelope12.xsd with targetNamespace http://www.w3.org/2003/05/soap-envelope
+18:18:09,054 INFO  [SchemaUtils] Added default schema from file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd with targetNamespace http://www.w3.org/2003/05/soap-encoding
+18:18:09,055 INFO  [SchemaUtils] Loading schema types from [http://www.dneonline.com/calculator.asmx?wsdl]
+18:18:09,055 INFO  [SchemaUtils] Getting schema http://www.dneonline.com/calculator.asmx?wsdl
+18:18:09,199 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://www.w3.org/2003/05/soap-encoding').
+18:18:09,199 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://www.w3.org/2003/05/soap-encoding').
+18:18:09,200 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://www.w3.org/2003/05/soap-encoding').
+18:18:09,200 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://www.w3.org/2003/05/soap-encoding').
+18:18:09,200 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://www.w3.org/2003/05/soap-encoding').
+18:18:09,200 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://www.w3.org/2003/05/soap-encoding').
+18:18:09,200 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://www.w3.org/2003/05/soap-encoding').
+18:18:09,200 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://www.w3.org/2003/05/soap-encoding').
+18:18:09,201 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://www.w3.org/2003/05/soap-encoding').
+18:18:09,201 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding12.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://www.w3.org/2003/05/soap-encoding').
+18:18:09,201 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://schemas.xmlsoap.org/soap/encoding/').
+18:18:09,201 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ID' should only be used for attributes (used for element 'ID@http://schemas.xmlsoap.org/soap/encoding/').
+18:18:09,202 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://schemas.xmlsoap.org/soap/encoding/').
+18:18:09,202 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREF' should only be used for attributes (used for element 'IDREF@http://schemas.xmlsoap.org/soap/encoding/').
+18:18:09,202 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://schemas.xmlsoap.org/soap/encoding/').
+18:18:09,202 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITY' should only be used for attributes (used for element 'ENTITY@http://schemas.xmlsoap.org/soap/encoding/').
+18:18:09,203 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://schemas.xmlsoap.org/soap/encoding/').
+18:18:09,203 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'IDREFS' should only be used for attributes (used for element 'IDREFS@http://schemas.xmlsoap.org/soap/encoding/').
+18:18:09,203 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://schemas.xmlsoap.org/soap/encoding/').
+18:18:09,203 WARN  [SchemaUtils] Error: jar:file:/usr/local/SmartBear/SoapUI-5.7.0/bin/soapui-5.7.0.jar!/com/eviware/soapui/resources/xsds/soapEncoding.xsd:0: warning: id-idref-idrefs-entity-entities-notation: For compatibility, type 'ENTITIES' should only be used for attributes (used for element 'ENTITIES@http://schemas.xmlsoap.org/soap/encoding/').
+18:18:09,204 DEBUG [AbstractDefinitionContext] Loaded Definition: ok
+18:18:09,224 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:09,224 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:09,224 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:09,224 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:09,224 INFO  [SoapUITestCaseRunner] Assertion [Contains [AddResults]] has status VALID
+18:18:09,224 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:09,225 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:09,225 INFO  [SoapUITestCaseRunner] running step [Getting Result]
+18:18:09,224 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:09,225 INFO  [SoapUITestCaseRunner] Assertion [Contains [AddResults]] has status VALID
+18:18:09,225 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:09,225 INFO  [SoapUITestCaseRunner] running step [Getting Result]
+18:18:09,226 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:09,226 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:09,226 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:09,227 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:09,228 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:09,228 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:09,229 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:09,229 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:09,420 INFO  [SoapUITestCaseRunner] running step [Multiply With Assertions]
+18:18:09,427 INFO  [SoapUITestCaseRunner] running step [Multiply With Assertions]
+18:18:09,621 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:09,621 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:09,652 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:09,652 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:09,652 INFO  [SoapUITestCaseRunner] Assertion [Contains [MultiplyResult]] has status VALID
+18:18:09,653 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:09,653 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:09,653 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion [ExpectedResult]] has status VALID
+18:18:09,653 INFO  [SoapUITestCaseRunner] running step [Getting Final Result]
+18:18:09,654 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:09,655 INFO  [SoapUITestCaseRunner] Assertion [Contains [MultiplyResult]] has status VALID
+18:18:09,656 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:09,656 INFO  [SoapUITestCaseRunner] Assertion [Script Assertion [ExpectedResult]] has status FAILED
+18:18:09,656 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98
+18:18:09,656 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98
+18:18:09,662 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC01.- Add two numbers and multiply that result - Passed Case], time taken: 1385ms, status: FINISHED
+18:18:09,664 ERROR [SoapUITestCaseRunner] Multiply With Assertions failed, exporting to [/reports/TestSuite-TC02_Add_two_numbers_and_multiply_that_result__Failed_Case_Wrong_Result-Multiply_With_Assertions-0-FAILED.txt]
+18:18:09,664 ERROR [SoapUITestCaseRunner] Multiply With Assertions failed, exporting to [/reports/TestSuite-TC02_Add_two_numbers_and_multiply_that_result__Failed_Case_Wrong_Result-Multiply_With_Assertions-0-FAILED.txt]
+18:18:09,677 INFO  [SoapUITestCaseRunner] running step [Getting Final Result]
+18:18:09,681 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC02.- Add two numbers and multiply that result - Failed Case (Wrong Result)], time taken: 1387ms, status: FAILED
+18:18:09,796 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:09,797 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:09,797 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:09,797 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:09,798 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:09,800 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:09,807 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:09,808 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:09,808 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:09,808 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:09,808 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:09,811 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:09,978 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:09,978 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:09,979 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:09,979 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:09,979 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:09,984 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:09,991 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:09,991 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:09,991 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:09,991 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:09,992 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:09,994 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:10,157 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:10,157 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:10,157 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:10,157 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:10,158 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:10,160 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:10,173 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:10,173 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:10,173 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:10,174 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:10,174 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:10,176 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:10,332 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:10,333 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:10,333 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:10,333 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:10,333 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:10,335 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:10,346 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:10,346 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:10,346 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:10,346 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:10,347 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:10,349 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:10,504 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:10,504 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:10,504 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:10,505 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:10,505 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:10,507 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:10,530 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:10,530 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:10,530 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:10,530 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:10,530 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:10,532 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:10,677 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:10,677 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:10,678 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:10,678 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:10,678 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:10,680 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:10,711 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:10,711 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:10,711 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:10,711 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:10,711 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:10,714 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:10,854 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:10,854 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:10,854 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:10,855 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:10,855 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:10,857 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:10,891 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:10,891 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:10,892 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:10,892 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:10,892 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:10,894 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,027 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,027 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,027 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,027 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,028 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,030 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,071 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,072 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,072 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,072 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,073 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,074 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,198 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,198 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,198 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,198 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,198 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,200 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,246 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,246 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,247 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,247 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,247 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,249 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,373 WARN  [WsdlValidator] Missing matching Fault in wsdl for bindingOperation [Add]
+18:18:11,373 WARN  [WsdlValidator] Missing matching Fault in wsdl for bindingOperation [Add]
+18:18:11,374 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,374 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,374 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,374 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,374 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,377 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,425 WARN  [WsdlValidator] Missing matching Fault in wsdl for bindingOperation [Add]
+18:18:11,425 WARN  [WsdlValidator] Missing matching Fault in wsdl for bindingOperation [Add]
+18:18:11,425 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,425 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,425 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,425 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,426 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,427 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,545 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,545 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,545 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,545 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,545 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,547 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,599 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,599 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,599 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,599 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,599 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,601 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,714 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,714 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,714 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,714 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,714 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,716 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,772 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,772 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,772 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,772 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,773 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,774 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,879 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,879 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,879 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,879 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,879 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,881 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:11,946 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:11,946 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:11,946 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:11,946 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:11,946 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:11,948 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,046 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,047 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,047 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,047 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,047 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,048 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,119 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,119 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,119 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,119 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,119 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,121 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,213 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,213 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,213 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,213 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,213 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,215 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,291 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,291 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,291 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,291 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,292 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,293 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,380 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,380 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,380 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,380 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,380 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,382 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,464 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,464 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,464 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,464 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,464 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,466 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,548 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,548 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,548 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,548 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,548 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,550 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,635 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,635 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,635 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,635 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,635 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,637 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,716 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,716 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,716 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,716 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,716 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,718 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,810 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,810 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,810 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,810 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,810 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,811 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,882 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,882 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,882 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,882 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,882 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,883 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:12,983 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:12,983 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:12,983 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:12,983 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:12,983 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:12,984 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:13,047 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:13,047 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:13,047 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:13,048 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:13,048 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:13,049 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:13,155 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:13,155 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:13,156 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:13,156 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:13,156 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:13,157 INFO  [SoapUITestCaseRunner] running step [Add]
+18:18:13,216 WARN  [WsdlValidator] Missing matching Fault in wsdl for bindingOperation [Add]
+18:18:13,216 WARN  [WsdlValidator] Missing matching Fault in wsdl for bindingOperation [Add]
+18:18:13,217 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:13,217 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:13,217 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:13,217 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:13,217 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:13,219 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC03.- Max number of digits - Passed Case], time taken: 4900ms, status: FINISHED
+18:18:13,330 WARN  [WsdlValidator] Missing matching Fault in wsdl for bindingOperation [Add]
+18:18:13,330 WARN  [WsdlValidator] Missing matching Fault in wsdl for bindingOperation [Add]
+18:18:13,330 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status VALID
+18:18:13,330 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status VALID
+18:18:13,331 INFO  [SoapUITestCaseRunner] Assertion [Contains [Fault]] has status UNKNOWN
+18:18:13,331 INFO  [SoapUITestCaseRunner] Assertion [Not Contains [Error]] has status VALID
+18:18:13,331 INFO  [SoapUITestCaseRunner] running step [Check number]
+18:18:13,343 ERROR [SoapUI] An error occurred [El m?ximo n?mero de cifras ya no es 6. Expression: (nMaxSum02 == numMax_Sum02). Values: nMaxSum02 = 6, numMax_Sum02 = 10], see error log for details
+18:18:13,343 ERROR [SoapUI] An error occurred [El m?ximo n?mero de cifras ya no es 6. Expression: (nMaxSum02 == numMax_Sum02). Values: nMaxSum02 = 6, numMax_Sum02 = 10], see error log for details
+18:18:13,343 ERROR [errorlog] java.lang.AssertionError: El m?ximo n?mero de cifras ya no es 6. Expression: (nMaxSum02 == numMax_Sum02). Values: nMaxSum02 = 6, numMax_Sum02 = 10
+java.lang.AssertionError: El m?ximo n?mero de cifras ya no es 6. Expression: (nMaxSum02 == numMax_Sum02). Values: nMaxSum02 = 6, numMax_Sum02 = 10
+	at org.codehaus.groovy.runtime.InvokerHelper.assertFailed(InvokerHelper.java:438) ~[groovy-3.0.6.jar:3.0.6]
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.assertFailed(ScriptBytecodeAdapter.java:670) ~[groovy-3.0.6.jar:3.0.6]
+	at Script1.run(Script1.groovy:47) ~[?:?]
+	at com.eviware.soapui.support.scripting.groovy.SoapUIGroovyScriptEngine.run(SoapUIGroovyScriptEngine.java:90) ~[soapui-5.7.0.jar:5.7.0]
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlGroovyScriptTestStep.run(WsdlGroovyScriptTestStep.java:143) [soapui-5.7.0.jar:5.7.0]
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:211) [soapui-5.7.0.jar:5.7.0]
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:47) [soapui-5.7.0.jar:5.7.0]
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:138) [soapui-5.7.0.jar:5.7.0]
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:46) [soapui-5.7.0.jar:5.7.0]
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:129) [soapui-5.7.0.jar:5.7.0]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at java.lang.Thread.run(Thread.java:831) [?:?]
+18:18:13,348 ERROR [SoapUITestCaseRunner] Check number failed, exporting to [/reports/TestSuite-TC04_Max_number_of_digits__Failed_Case_Over_the_max_number-Check_number-21-FAILED.txt]
+18:18:13,348 ERROR [SoapUITestCaseRunner] Check number failed, exporting to [/reports/TestSuite-TC04_Max_number_of_digits__Failed_Case_Over_the_max_number-Check_number-21-FAILED.txt]
+18:18:13,351 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TC04.- Max number of digits - Failed Case (Over the max number)], time taken: 5034ms, status: FAILED
+18:18:13,355 INFO  [SoapUITestCaseRunner] Project [QA Automation Challenge] finished with status [FAILED] in 5102ms
+18:18:13,361 ERROR [SoapUITestCaseRunner] java.lang.Exception: Script Assertion [ExpectedResult] in [Multiply With Assertions] failed;
+[No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98]
+Status: FAILED
+Time Taken: 224
+Size: 345
+Timestamp: Sun Mar 27 18:18:09 GMT 2022
+TestStep: Multiply With Assertions
+
+----------------- Messages ------------------------------
+[Script Assertion [ExpectedResult]] No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98
+
+----------------- Properties ------------------------------
+Endpoint: http://www.dneonline.com/calculator.asmx
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.1)
+Host : www.dneonline.com
+Accept-Encoding : gzip,deflate
+Content-Length : 282
+Content-Type : application/soap+xml;charset=UTF-8;action="http://tempuri.org/Multiply"
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:Multiply>
+         <tem:intA>8</tem:intA>
+         <tem:intB>14</tem:intB>
+      </tem:Multiply>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/10.0
+X-AspNet-Version : 2.0.50727
+#status# : HTTP/1.1 200 OK
+X-Powered-By-Plesk : PleskWin
+Content-Length : 345
+Date : Sun, 27 Mar 2022 18:18:06 GMT
+Content-Type : application/soap+xml; charset=utf-8
+X-Powered-By : ASP.NET
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <MultiplyResponse xmlns="http://tempuri.org/">
+         <MultiplyResult>112</MultiplyResult>
+      </MultiplyResponse>
+   </soap:Body>
+</soap:Envelope>
+TestCase [TC04.- Max number of digits - Failed Case (Over the max number)] failed without assertions
+
+18:18:13,361 ERROR [SoapUITestCaseRunner] java.lang.Exception: Script Assertion [ExpectedResult] in [Multiply With Assertions] failed;
+[No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98]
+Status: FAILED
+Time Taken: 224
+Size: 345
+Timestamp: Sun Mar 27 18:18:09 GMT 2022
+TestStep: Multiply With Assertions
+
+----------------- Messages ------------------------------
+[Script Assertion [ExpectedResult]] No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98
+
+----------------- Properties ------------------------------
+Endpoint: http://www.dneonline.com/calculator.asmx
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.1)
+Host : www.dneonline.com
+Accept-Encoding : gzip,deflate
+Content-Length : 282
+Content-Type : application/soap+xml;charset=UTF-8;action="http://tempuri.org/Multiply"
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:Multiply>
+         <tem:intA>8</tem:intA>
+         <tem:intB>14</tem:intB>
+      </tem:Multiply>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/10.0
+X-AspNet-Version : 2.0.50727
+#status# : HTTP/1.1 200 OK
+X-Powered-By-Plesk : PleskWin
+Content-Length : 345
+Date : Sun, 27 Mar 2022 18:18:06 GMT
+Content-Type : application/soap+xml; charset=utf-8
+X-Powered-By : ASP.NET
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <MultiplyResponse xmlns="http://tempuri.org/">
+         <MultiplyResult>112</MultiplyResult>
+      </MultiplyResponse>
+   </soap:Body>
+</soap:Envelope>
+TestCase [TC04.- Max number of digits - Failed Case (Over the max number)] failed without assertions
+
+18:18:13,361 ERROR [SoapUI] An error occurred [Script Assertion [ExpectedResult] in [Multiply With Assertions] failed;
+[No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98]
+Status: FAILED
+Time Taken: 224
+Size: 345
+Timestamp: Sun Mar 27 18:18:09 GMT 2022
+TestStep: Multiply With Assertions
+
+----------------- Messages ------------------------------
+[Script Assertion [ExpectedResult]] No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98
+
+----------------- Properties ------------------------------
+Endpoint: http://www.dneonline.com/calculator.asmx
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.1)
+Host : www.dneonline.com
+Accept-Encoding : gzip,deflate
+Content-Length : 282
+Content-Type : application/soap+xml;charset=UTF-8;action="http://tempuri.org/Multiply"
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:Multiply>
+         <tem:intA>8</tem:intA>
+         <tem:intB>14</tem:intB>
+      </tem:Multiply>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/10.0
+X-AspNet-Version : 2.0.50727
+#status# : HTTP/1.1 200 OK
+X-Powered-By-Plesk : PleskWin
+Content-Length : 345
+Date : Sun, 27 Mar 2022 18:18:06 GMT
+Content-Type : application/soap+xml; charset=utf-8
+X-Powered-By : ASP.NET
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <MultiplyResponse xmlns="http://tempuri.org/">
+         <MultiplyResult>112</MultiplyResult>
+      </MultiplyResponse>
+   </soap:Body>
+</soap:Envelope>
+TestCase [TC04.- Max number of digits - Failed Case (Over the max number)] failed without assertions
+], see error log for details
+18:18:13,361 ERROR [SoapUI] An error occurred [Script Assertion [ExpectedResult] in [Multiply With Assertions] failed;
+[No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98]
+Status: FAILED
+Time Taken: 224
+Size: 345
+Timestamp: Sun Mar 27 18:18:09 GMT 2022
+TestStep: Multiply With Assertions
+
+----------------- Messages ------------------------------
+[Script Assertion [ExpectedResult]] No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98
+
+----------------- Properties ------------------------------
+Endpoint: http://www.dneonline.com/calculator.asmx
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.1)
+Host : www.dneonline.com
+Accept-Encoding : gzip,deflate
+Content-Length : 282
+Content-Type : application/soap+xml;charset=UTF-8;action="http://tempuri.org/Multiply"
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:Multiply>
+         <tem:intA>8</tem:intA>
+         <tem:intB>14</tem:intB>
+      </tem:Multiply>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/10.0
+X-AspNet-Version : 2.0.50727
+#status# : HTTP/1.1 200 OK
+X-Powered-By-Plesk : PleskWin
+Content-Length : 345
+Date : Sun, 27 Mar 2022 18:18:06 GMT
+Content-Type : application/soap+xml; charset=utf-8
+X-Powered-By : ASP.NET
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <MultiplyResponse xmlns="http://tempuri.org/">
+         <MultiplyResult>112</MultiplyResult>
+      </MultiplyResponse>
+   </soap:Body>
+</soap:Envelope>
+TestCase [TC04.- Max number of digits - Failed Case (Over the max number)] failed without assertions
+], see error log for details
+18:18:13,361 ERROR [errorlog] java.lang.Exception: Script Assertion [ExpectedResult] in [Multiply With Assertions] failed;
+[No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98]
+Status: FAILED
+Time Taken: 224
+Size: 345
+Timestamp: Sun Mar 27 18:18:09 GMT 2022
+TestStep: Multiply With Assertions
+
+----------------- Messages ------------------------------
+[Script Assertion [ExpectedResult]] No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98
+
+----------------- Properties ------------------------------
+Endpoint: http://www.dneonline.com/calculator.asmx
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.1)
+Host : www.dneonline.com
+Accept-Encoding : gzip,deflate
+Content-Length : 282
+Content-Type : application/soap+xml;charset=UTF-8;action="http://tempuri.org/Multiply"
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:Multiply>
+         <tem:intA>8</tem:intA>
+         <tem:intB>14</tem:intB>
+      </tem:Multiply>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/10.0
+X-AspNet-Version : 2.0.50727
+#status# : HTTP/1.1 200 OK
+X-Powered-By-Plesk : PleskWin
+Content-Length : 345
+Date : Sun, 27 Mar 2022 18:18:06 GMT
+Content-Type : application/soap+xml; charset=utf-8
+X-Powered-By : ASP.NET
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <MultiplyResponse xmlns="http://tempuri.org/">
+         <MultiplyResult>112</MultiplyResult>
+      </MultiplyResponse>
+   </soap:Body>
+</soap:Envelope>
+TestCase [TC04.- Max number of digits - Failed Case (Over the max number)] failed without assertions
+
+java.lang.Exception: Script Assertion [ExpectedResult] in [Multiply With Assertions] failed;
+[No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98]
+Status: FAILED
+Time Taken: 224
+Size: 345
+Timestamp: Sun Mar 27 18:18:09 GMT 2022
+TestStep: Multiply With Assertions
+
+----------------- Messages ------------------------------
+[Script Assertion [ExpectedResult]] No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98
+
+----------------- Properties ------------------------------
+Endpoint: http://www.dneonline.com/calculator.asmx
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.1)
+Host : www.dneonline.com
+Accept-Encoding : gzip,deflate
+Content-Length : 282
+Content-Type : application/soap+xml;charset=UTF-8;action="http://tempuri.org/Multiply"
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:Multiply>
+         <tem:intA>8</tem:intA>
+         <tem:intB>14</tem:intB>
+      </tem:Multiply>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/10.0
+X-AspNet-Version : 2.0.50727
+#status# : HTTP/1.1 200 OK
+X-Powered-By-Plesk : PleskWin
+Content-Length : 345
+Date : Sun, 27 Mar 2022 18:18:06 GMT
+Content-Type : application/soap+xml; charset=utf-8
+X-Powered-By : ASP.NET
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <MultiplyResponse xmlns="http://tempuri.org/">
+         <MultiplyResult>112</MultiplyResult>
+      </MultiplyResponse>
+   </soap:Body>
+</soap:Envelope>
+TestCase [TC04.- Max number of digits - Failed Case (Over the max number)] failed without assertions
+
+	at com.eviware.soapui.tools.SoapUITestCaseRunner.throwFailureException(SoapUITestCaseRunner.java:520) ~[soapui-5.7.0.jar:5.7.0]
+	at com.eviware.soapui.tools.SoapUITestCaseRunner.runRunner(SoapUITestCaseRunner.java:436) ~[soapui-5.7.0.jar:5.7.0]
+	at com.eviware.soapui.tools.AbstractSoapUIRunner.run(AbstractSoapUIRunner.java:228) ~[soapui-5.7.0.jar:5.7.0]
+	at com.eviware.soapui.tools.AbstractSoapUIRunner.run(AbstractSoapUIRunner.java:148) [soapui-5.7.0.jar:5.7.0]
+	at com.eviware.soapui.tools.AbstractSoapUIRunner.runFromCommandLine(AbstractSoapUIRunner.java:116) [soapui-5.7.0.jar:5.7.0]
+	at com.eviware.soapui.tools.SoapUITestCaseRunner.main(SoapUITestCaseRunner.java:122) [soapui-5.7.0.jar:5.7.0]

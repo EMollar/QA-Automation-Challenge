@@ -1,0 +1,51 @@
+Status: FAILED
+Time Taken: 224
+Size: 345
+Timestamp: Sun Mar 27 18:18:09 GMT 2022
+TestStep: Multiply With Assertions
+
+----------------- Messages ------------------------------
+[Script Assertion [ExpectedResult]] No es el resultado esperado. Expression: (gettingResult == expectedResult). Values: gettingResult = 112, expectedResult = 98
+
+----------------- Properties ------------------------------
+Endpoint: http://www.dneonline.com/calculator.asmx
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/16.0.1)
+Host : www.dneonline.com
+Accept-Encoding : gzip,deflate
+Content-Length : 282
+Content-Type : application/soap+xml;charset=UTF-8;action="http://tempuri.org/Multiply"
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+   <soap:Header/>
+   <soap:Body>
+      <tem:Multiply>
+         <tem:intA>8</tem:intA>
+         <tem:intB>14</tem:intB>
+      </tem:Multiply>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/10.0
+X-AspNet-Version : 2.0.50727
+#status# : HTTP/1.1 200 OK
+X-Powered-By-Plesk : PleskWin
+Content-Length : 345
+Date : Sun, 27 Mar 2022 18:18:06 GMT
+Content-Type : application/soap+xml; charset=utf-8
+X-Powered-By : ASP.NET
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <MultiplyResponse xmlns="http://tempuri.org/">
+         <MultiplyResult>112</MultiplyResult>
+      </MultiplyResponse>
+   </soap:Body>
+</soap:Envelope>

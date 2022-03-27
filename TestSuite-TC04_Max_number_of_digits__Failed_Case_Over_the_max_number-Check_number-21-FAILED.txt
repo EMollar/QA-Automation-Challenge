@@ -1,0 +1,10 @@
+Status: FAILED
+Time Taken: 16
+Size: 0
+Timestamp: Sun Mar 27 18:18:13 GMT 2022
+TestStep: Check number
+Error:java.lang.AssertionError: El m?ximo n?mero de cifras ya no es 6. Expression: (nMaxSum02 == numMax_Sum02). Values: nMaxSum02 = 6, numMax_Sum02 = 10
+
+----------------- Messages ------------------------------
+java.lang.AssertionError: El m?ximo n?mero de cifras ya no es 6. Expression: (nMaxSum02 == numMax_Sum02). Values: nMaxSum02 = 6, numMax_Sum02 = 10
+error at line: 47
